@@ -1,0 +1,51 @@
+{
+  "name": "blendy",
+  "author": "Taha Shashtari (taha@tahazsh.com)",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/blendy.min.js",
+  "module": "./dist/blendy.js",
+  "types": "./dist/blendy.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/blendy.js",
+      "require": "./dist/blendy.min.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "tsc": "tsc --noEmit",
+    "build": "tsc -p tsconfig.build.json && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.1",
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "svelte": "^5.8.0",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1",
+    "vite-plugin-dts": "^4.3.0",
+    "vue": "^3.5.13"
+  },
+  "keywords": [
+    "transition",
+    "morph",
+    "transform",
+    "blend",
+    "convert",
+    "smooth",
+    "animation"
+  ],
+  "license": "MIT",
+  "homepage": "https://blendy.tahazsh.com/"
+}
